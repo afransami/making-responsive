@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500&family=Work+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cb9dc44f1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              ptext: "#777777;",
+              btncolor: "#B68C5A;",
+              fontfamily: "Poppins",
+              contactusbg: "#F3F3F3",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-fontfamily">
+    <!-- navbar section -->
+
+    <section class="container p-10 mx-auto">
+      <section class="container">
+        <div class="navbar bg-base-500">
+          <div class="flex items-center justify-between">
+            <img src="./images/business.png" alt="" />
+            <a class="btn btn-ghost normal-case font-bold text-4xl">Justice</a>
+          </div>
+
+          <div class="flex-1 items-center justify-around">
+            <div class="mx-auto">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Cases</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- The button to open modal -->
+            <div>
+              <label for="my-modal" class="btn bg-btncolor border-0"
+                >Free Consultation</label
+              >
+              <input type="checkbox" id="my-modal" class="modal-toggle" />
+              <div class="modal">
+                <div class="modal-box">
+                  <h3 class="font-bold text-center text-lg">
+                    Congratulations random Internet user!
+                  </h3>
+                  <p class="py-4">
+                    You've been selected for a chance to get one year of
+                    subscription to use Wikipedia for free!
+                  </p>
+                  <div class="modal-action">
+                    <label for="my-modal" class="btn">Okey!</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner section -->
+
+      <section class="container">
+        <div class="banner-container mt-10">
+          <img src="./images/banner.png" alt="" style="width: 100%" />
+          <div class="centered">
+            <h1 class="text-5xl font-bold">
+              We Provide Effective <br />Legal Solutions
+            </h1>
+            <br />
+            <p>
+              W3Schools is optimized for learning and training. Examples might
+              be simplified to improve reading and learning. Tutorials,
+              references, and examples are constantly reviewed to avoid errors.
+            </p>
+            <div class="flex-1 justify-between mt-5">
+              <input
+                type="text"
+                placeholder="Search your items"
+                class="input input-bordered w-full max-w-xs"
+              />
+              <button class="btn bg-btncolor">Search</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Legal Practice Area -->
+
+      <section class="container mt-20 py-20 text-center">
+        <h1 class="text-4xl font-bold">The Legal Practice Area</h1>
+        <br />
+        <p class="max-w-xl mx-auto">
+          W3Schools is optimized for learning and training. Examples might be
+          simplified to improve reading and learning. Tutorials, references.
+        </p>
+      </section>
+
+      <section class="container grid grid-cols-3 row-cols-3">
+        <div class="text-center mx-auto px-5 py-5">
+          <img class="mb-5 mx-auto" src="./images/business.png" alt="" />
+          <h1 class="font-bold text-3xl mb-2">Business Law</h1>
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+        </div>
+        <div
+          class="text-center mx-auto px-5 py-5 border-x-2 border-b-2 bg-gradient-to-b from-orange-50 to-transparent"
+        >
+          <img class="mb-5 mx-auto" src="./images/criminal.png" alt="" />
+          <h1 class="font-bold text-3xl mb-2">Criminal Law</h1>
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+        </div>
+        <div class="text-center mx-auto px-5 py-5">
+          <img class="mb-5 mx-auto" src="./images/child.png" alt="" />
+          <h1 class="font-bold text-3xl mb-2">Child Support</h1>
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+        </div>
+
+        <div class="text-center mx-auto px-5 py-5 border-t-2">
+          <img class="mb-5 mx-auto" src="./images/education.png" alt="" />
+          <h1 class="font-bold text-3xl mb-2">Education Law</h1>
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+        </div>
+        <div class="text-center mx-auto px-5 py-5 border-x-2">
+          <img class="mb-5 mx-auto" src="./images/divorce.png" alt="" />
+          <h1 class="font-bold text-3xl mb-2">Divorce Law</h1>
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+        </div>
+        <div class="text-center mx-auto px-5 py-5 border-t-2">
+          <img class="mb-5 mx-auto" src="./images/tax.png" alt="" />
+          <h1 class="font-bold text-3xl mb-2">Tax Law</h1>
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+        </div>
+      </section>
+
+      <!-- What Our Client Say -->
+
+      <section>
+        <section class="container mt-20 py-20 text-center">
+          <h1 class="text-4xl font-bold">What Our Client Say</h1>
+          <br />
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+        </section>
+
+        <section class="container mx-auto">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/slider-1.jpg" class="w-full rounded-xl" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+                <div class="centered text-center">
+                  <img
+                    class="rounded-full scale-50 mx-auto"
+                    src="./images/morgan.jpg"
+                    alt=""
+                  />
+                  <h1 class="text-5xl font-bold text-white">Morgan Freeman</h1>
+                  <br />
+                  <h2 class="text-4xl italic text-white">Superb Actor</h2>
+                  <br />
+                  <p class="text-white">
+                    W3Schools is optimized for learning and training. Examples
+                    might be simplified to improve reading and learning.
+                    Tutorials, references, and examples are constantly reviewed
+                    to avoid errors.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/slider-2.jpg" class="w-full rounded-xl" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+
+                <div class="centered text-center">
+                  <img
+                    class="rounded-full scale-50 mx-auto"
+                    src="./images/morgan.jpg"
+                    alt=""
+                  />
+                  <h1 class="text-5xl font-bold text-white">Morgan Freeman</h1>
+                  <br />
+                  <h2 class="text-4xl italic text-white">Superb Actor</h2>
+                  <br />
+                  <p class="text-white">
+                    W3Schools is optimized for learning and training. Examples
+                    might be simplified to improve reading and learning.
+                    Tutorials, references, and examples are constantly reviewed
+                    to avoid errors.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/slider-3.jpg" class="w-full rounded-xl" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+
+                <div class="centered text-center">
+                  <img
+                    class="rounded-full scale-50 mx-auto"
+                    src="./images/morgan.jpg"
+                    alt=""
+                  />
+                  <h1 class="text-5xl font-bold text-white">Morgan Freeman</h1>
+                  <br />
+                  <h2 class="text-4xl italic text-white">Superb Actor</h2>
+                  <br />
+                  <p class="text-white">
+                    W3Schools is optimized for learning and training. Examples
+                    might be simplified to improve reading and learning.
+                    Tutorials, references, and examples are constantly reviewed
+                    to avoid errors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Frequently Asked Any Questions -->
+
+      <section>
+        <section class="container mt-20 py-20 text-center">
+          <h1 class="text-4xl font-bold">Frequently Asked Any Questions</h1>
+          <br />
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+        </section>
+
+        <section class="container grid grid-cols-2 row-cols-4">
+          <div
+            tabindex="0"
+            class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+          >
+            <div class="collapse-title text-xl font-medium">
+              1. Which is better Tailwind CSS or Bootstrap?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Bootstrap is a component-based framework, which means it comes
+                with prebuilt components and includes other utilities for
+                layering displays, spacing, etc. Tailwind, on the other hand,
+                CSS is a utility-first framework. Using Tailwind CSS is akin to
+                writing regular CSS. Unlike Bootstrap, it has no prebuilt
+                components.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="row-span-4 text-center mx-auto px-5 py-5 bg-gradient-to-b from-orange-50 to-transparent rounded-xl"
+          >
+            <img class="mb-5 bg-center" src="./images/faq.png" alt="" />
+          </div>
+
+          <div
+            tabindex="0"
+            class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+          >
+            <div class="collapse-title text-xl font-medium">
+              2. What is media query used for?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Media queries are a key part of responsive web design, as they
+                allow you to create different layouts depending on the size of
+                the viewport, but they can also be used to detect other things
+                about the environment your site is running on, for example
+                whether the user is using a touchscreen rather than a mouse
+              </p>
+            </div>
+          </div>
+
+          <div
+            tabindex="0"
+            class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+          >
+            <div class="collapse-title text-xl font-medium">
+              3. What is semantic tags in HTML?
+            </div>
+            <div class="collapse-content">
+              <p>
+                A semantic element clearly describes its meaning to both the
+                browser and the developer. Examples of non-semantic elements:
+                div and span - Tells nothing about its content. Examples of
+                semantic elements: form, table , and article - Clearly defines
+                its content.
+              </p>
+            </div>
+          </div>
+
+          <div
+            tabindex="0"
+            class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+          >
+            <div class="collapse-title text-xl font-medium">
+              4. What is css box model and how does it work?
+            </div>
+
+            <div class="collapse-content">
+              <p>
+                How does CSS box model work? In CSS, the term "box model" is
+                used when talking about design and layout. The CSS box model is
+                essentially a box that wraps around every HTML element. It
+                consists of: margins, borders, padding, and the actual content.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Contact With Us -->
+
+      <section>
+        <section class="container mt-20 py-20 w-full px-auto text-center">
+          <h1 class="text-4xl font-bold">Contact With Us</h1>
+          <br />
+          <p class="max-w-xl mx-auto">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references.
+          </p>
+
+          <section class="grid grid-cols-2 mt-20 w-full">
+            <div class="bg-contactusbg grid grid-cols-2 rounded-xl">
+              <div class="text-center mx-auto px-5 py-5">
+                <img class="mb-5 mx-auto" src="./images/address.png" alt="" />
+                <h1 class="font-bold text-3xl mb-2">Address</h1>
+                <p class="max-w-xl mx-auto">
+                  A108 Adam Street,<br />New York, NY 535022.
+                </p>
+              </div>
+
+              <div class="text-center mx-auto px-5 py-5">
+                <img class="mb-5 mx-auto" src="./images/call.png" alt="" />
+                <h1 class="font-bold text-3xl mb-2">Call Us</h1>
+                <p class="max-w-xl mx-auto">
+                  +88 01750 000 000,<br />+88 01750 000 000
+                </p>
+              </div>
+
+              <div class="text-center mx-auto px-5 py-5">
+                <img class="mb-5 mx-auto" src="./images/email.png" alt="" />
+                <h1 class="font-bold text-3xl mb-2">Email Us</h1>
+                <p class="max-w-xl mx-auto">
+                  info@gmail.com,<br />info@gmail.com
+                </p>
+              </div>
+
+              <div class="text-center mx-auto px-5 py-5">
+                <img class="mb-5 mx-auto" src="./images/time.png" alt="" />
+                <h1 class="font-bold text-3xl mb-2">Working Hours</h1>
+                <p class="max-w-xl mx-auto">
+                  Mon-Fri: 9AM to 5PM,<br />Sunday: 9AM to 1 PM
+                </p>
+              </div>
+            </div>
+
+            <div class="container">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="input input-bordered my-5 py-8 w-full max-w-xs bg-contactusbg"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  class="input input-bordered my-5 py-8 w-full max-w-xs bg-contactusbg"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="input input-bordered my-5 py-8 w-full max-w-xs bg-contactusbg"
+                />
+              </div>
+              <div>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message"
+                  class="input input-bordered my-5 py-20 w-full max-w-xs bg-contactusbg"
+                ></textarea>
+              </div>
+              <div>
+                <button class="btn bg-btncolor max-w-xs w-full">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="bg-black py-5">
+        <section class="container grid grid-cols-4 my-5 text-white mx-auto">
+          <div>
+            <div class="flex justify-start items-center pl-20">
+              <img src="./images/business.png" alt="" />
+              <h1 class="text-2xl mx-5">Justice</h1>
+            </div>
+            <p class="px-3 mt-5 text-center">
+              Justice is fairness in the way that people are treated. He has a
+              good overall sense of justice and fairness. He only wants freedom,
+              justice and equality. There is no justice in this world!
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-start items-center px-3 mt-5 text-center"
+          >
+            <h1 class="text-2xl mb-8">Usefull Link</h1>
+            <ul>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>About us</li></a>
+              <a href="#"><li>Blog</li></a>
+              <a href="#"><li>Career</li></a>
+              <a href="#"><li>Contact Us</li></a>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col justify-start items-center px-3 mt-5 text-l text-center"
+          >
+            <h1 class="text-2xl mb-8">Contact Us</h1>
+            <p>
+              555 4th 5t NW, Washington <br />
+              DC 20530, United States
+            </p>
+            <br />
+            <p>
+              +88 01750 000 000 <br />
+              +88 01750 000 000
+            </p>
+            <br />
+            <p>
+              <a href="#">info@gmail.com <br />info@gmail.com</a>
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-start items-center px-3 mt-5 text-l text-center"
+          >
+            <h1 class="text-2xl mb-8">Subscribe</h1>
+            <p>
+              Subscribe for our latest <br />
+              & Articles. We Won’t Give You <br />
+              Spam Mails
+            </p>
+
+            <div class="mx-auto flex flex-row justify-around mt-5">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="input input-bordered w-full max-w-xs"
+                />
+              </div>
+              <button class="btn bg-btncolor text-cneter g-3 px-3">
+                Send
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mx-3 -rotate-45"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
